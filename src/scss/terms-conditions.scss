@@ -1,0 +1,129 @@
+.terms-main {
+  padding: 22px 16px 0 16px;
+  width: 320px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    padding: 42px 24px 0 24px;
+    width: 1200px;
+  }
+}
+
+.terms-link {
+  font-family: 'Karla', sans-serif;
+  margin-top: 22px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #d59800;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.terms-section {
+  padding-top: 30px;
+
+  @include media(desktop) {
+    padding-top: 54px;
+  }
+}
+
+.terms-title {
+  font-family: 'Pacifico', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 140%;
+  text-align: center;
+  color: #71412b;
+
+  @include media(desktop) {
+    font-size: 70px;
+  }
+}
+
+.terms-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #d59800;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 133%;
+  }
+}
+
+.conditions-section {
+  padding-top: 34px;
+
+  @include media(desktop) {
+    padding-top: 70px;
+  }
+}
+
+.conditions-title {
+  font-family: 'Pacifico', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #71412b;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
+}
+
+.conditions-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #d59800;
+  margin-top: 14px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 133%;
+    margin-top: 24px;
+  }
+}
+
+.second-text {
+  margin-top: 24px;
+
+  @include media(desktop) {
+    margin-top: 48px;
+  }
+}
+
+.terms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  @include media(desktop) {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-left: 10px;
+  }
+}
+
+.terms-list-item {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #d59800;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 133%;
+    text-decoration: underline;
+  }
+}

@@ -32,5 +32,19 @@
 <symbol id="icon-ellipse" viewBox="0 0 32 32">
 <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
+<symbol id="icon-Switch" viewBox="0 0 33 32">
+<path fill="none" stroke="#d59800" style="stroke: var(--color1, #d59800)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.1474" d="M1.996 14.222c0-7.538 6.111-13.649 13.649-13.649s13.649 6.111 13.649 13.649c0 7.538-6.111 13.649-13.649 13.649s-13.649-6.111-13.649-13.649z"></path>
+<path fill="none" stroke="#d59800" style="stroke: var(--color1, #d59800)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5338" d="M17.778 18.489l-4.267-4.267 4.267-4.267"></path>
+</symbol>
+<symbol id="icon-down" viewBox="0 0 32 32">
+<path fill="none" stroke="#71412b" style="stroke: var(--color1, #71412b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.28" d="M22 13l-6 6-6-6"></path>
+</symbol>
+<symbol id="icon-up" viewBox="0 0 32 32">
+<path fill="none" stroke="#71412b" style="stroke: var(--color1, #71412b)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.28" d="M22 19l-6-6-6 6"></path>
+</symbol>
 </defs>
 </svg>
+
+
+
+

@@ -1,30 +1,54 @@
 .header {
-  padding: 20px 0;
-}
+  position: fixed;
+  z-index: 10;
+  margin: 0 auto;
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-
-  @include media(tablet) {
-    justify-content: flex-start;
+  .header-box {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    .logo-image {
+      width: 91px;
+    }
+    .menu-button {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background-color: #ebd9b6;
+      border: 1px solid #fff;
+      border-radius: 10px;
+    }
+    .header-svg {
+      width: 25px;
+      height: 25px;
+      fill: #fff;
+    }
   }
 
-  @include media(desktop) {
-    justify-content: flex-end;
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include media(desktop) {
+      gap: 62px;
+      .nav-link {
+        border: 3px solid #fff;
+        border-radius: 40px;
+        padding: 10px 0;
+        width: 104px;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        background-color: transparent;
+        color: $accent_color;
+        box-shadow: 2px 4px 4px 0 #111;
+      }
+    }
   }
-}
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: $_header_accent_color;
 }

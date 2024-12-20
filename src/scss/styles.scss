@@ -1,12 +1,18 @@
 @import './header.scss';
+@import './privacy-policy.scss';
+@import './terms-conditions.scss';
+@import './footer.scss';
+@import './faq.scss';
 @import './hero.scss';
 @import './reviews.scss';
+@import './gallery.scss';
 
 :root {
   font-family: 'Karla', sans-serif;
-  font-weight: 400;
-
   color: $accent_color;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

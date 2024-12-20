@@ -59,6 +59,8 @@
 
   @include media(desktop) {
     font-size: 32px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -78,6 +80,7 @@
     font-size: 24px;
     padding-top: 11px;
     padding-left: 44px;
+    padding-right: 195px;
   }
 }
 
@@ -102,4 +105,12 @@
 .is-visible {
   display: block;
   opacity: 1;
+}
+
+.faq-icon {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
 }

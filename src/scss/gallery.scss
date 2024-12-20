@@ -1,0 +1,146 @@
+// .gallery-section {
+//   padding-top: 80px;
+//   padding-bottom: 80px;
+//   position: relative;
+
+//   @include media(desktop) {
+//     scroll-margin-top: 70px;
+//   }
+// }
+
+// .gallery-swiper-container {
+//   position: relative;
+//   overflow: hidden;
+//   margin-top: 20px;
+//   width: 591px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   // visibility: hidden;
+
+//   @include media(desktop) {
+//     margin-top: 75px;
+//     width: 1076px;
+//   }
+// }
+
+// .gallery-swiper-container.show {
+//   visibility: visible;
+//   margin: 0 auto;
+// }
+
+// .gallery-slide {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 762px;
+//   height: 423px;
+//   overflow: hidden;
+
+//   @include media(desktop) {
+//     width: 762px;
+//     height: 463px;
+//   }
+// }
+
+// .gallery-img {
+//   border-radius: 32px;
+//   width: 280px;
+//   height: 157px;
+
+//   @include media(desktop) {
+//     width: 762px;
+//     height: 463px;
+//   }
+// }
+
+// .gallery-img.active {
+//   width: 100px;
+//   height: 85px;
+
+//   @include media(desktop) {
+//     width: 100px;
+//     height: 85px;
+//   }
+// }
+
+// .controls {
+//   position: absolute;
+//   top: 300px;
+//   left: 84px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-top: 24px;
+//   gap: 55px;
+//   z-index: 2;
+
+//   @include media(desktop) {
+//     gap: 832px;
+//   }
+// }
+
+// .arrow-btn {
+//   transition: transform 0.3s ease-in-out;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+
+//   &:hover {
+//     transform: scale(1.2);
+//   }
+
+//   &[disabled] {
+//     opacity: 0.5;
+//     cursor: not-allowed;
+
+//     &:hover {
+//       transform: none;
+//     }
+//   }
+// }
+
+// .arrow-icon {
+//   width: 58px;
+//   height: 30px;
+
+//   @include media(desktop) {
+//     width: 100px;
+//     height: 100px;
+//   }
+// }
+
+// .dots {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 16px;
+
+//   @include media(desktop) {
+//     gap: 24px;
+//   }
+// }
+
+// .dot {
+//   width: 19px;
+//   height: 18px;
+//   transition: transform 0.5s, background-color 0.5s, width 0.5s, height 0.5s;
+//   border-radius: 100%;
+//   background-color: #f593bc;
+//   cursor: pointer;
+
+//   @include media(desktop) {
+//     width: 20px;
+//     height: 20px;
+//   }
+// }
+
+// .dot.active {
+//   background-color: #fff;
+//   width: 26px;
+//   height: 26px;
+
+//   @include media(desktop) {
+//     width: 30px;
+//     height: 30px;
+//   }
+// }

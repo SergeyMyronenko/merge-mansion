@@ -11,19 +11,28 @@
 
 .terms-link {
   font-family: 'Karla', sans-serif;
-  margin-top: 22px;
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
   color: #d59800;
+  display: flex;
+  align-items: center;
 
   @include media(desktop) {
     font-size: 40px;
   }
 }
 
+.terms-link svg {
+  @include media(desktop) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .terms-section {
   padding-top: 30px;
+  background-color: #fff;
 
   @include media(desktop) {
     padding-top: 54px;
@@ -61,6 +70,7 @@
 
 .conditions-section {
   padding-top: 34px;
+  background-color: #fff;
 
   @include media(desktop) {
     padding-top: 70px;

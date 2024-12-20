@@ -1,30 +1,31 @@
-// import sprite from '../img/icons/sprite.svg';
-
 const faqBtns = document.querySelectorAll('.faq-list-item');
+
 faqBtns.forEach(btn => btn.addEventListener('click', onBtnClick));
 
 function onBtnClick(e) {
-  const faqTop = e.currentTarget;
-  const faqContainer = faqTop.closest('.faq-list-item');
+  const faqContainer = e.currentTarget;
+  const faqIcon = faqContainer.querySelector('use');
+  const faqBottomText = faqContainer.querySelector('.faq-bottom-text');
+
+  const isVisible = faqBottomText.classList.contains('is-visible');
 
   document.querySelectorAll('.faq-list-item').forEach(item => {
     if (item !== faqContainer) {
       item.classList.remove('faq-open');
       item.querySelector('.faq-bottom-text').classList.remove('is-visible');
-      // item.querySelector('use').setAttribute('href', `${sprite}#icon-plus`);
+      item
+        .querySelector('use')
+        .setAttribute('xlink:href', './img/sprite.svg#icon-down');
     }
   });
 
-  const bottomText = faqContainer.querySelector('.faq-bottom-text');
-  bottomText.classList.toggle('is-visible');
-
-  if (bottomText.classList.contains('is-visible')) {
-    faqContainer.classList.add('faq-open');
-    faqContainer.querySelector('use');
-    // .setAttribute('href', `${sprite}#icon-minus`);
-  } else {
+  if (isVisible) {
     faqContainer.classList.remove('faq-open');
-    faqContainer.querySelector('use');
-    // .setAttribute('href', `${sprite}#icon-plus`);
+    faqBottomText.classList.remove('is-visible');
+    faqIcon.setAttribute('xlink:href', './img/sprite.svg#icon-down');
+  } else {
+    faqContainer.classList.add('faq-open');
+    faqBottomText.classList.add('is-visible');
+    faqIcon.setAttribute('xlink:href', './img/sprite.svg#icon-up');
   }
 }

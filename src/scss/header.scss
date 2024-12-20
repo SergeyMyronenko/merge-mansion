@@ -1,9 +1,10 @@
 .header {
   position: fixed;
   z-index: 10;
-  margin: 0 auto;
+  background-color: transparent;
 
   .header-box {
+    margin: 0 auto;
     height: 64px;
     display: flex;
     justify-content: space-between;
@@ -28,26 +29,81 @@
       height: 25px;
       fill: #fff;
     }
-  }
+    .modal {
+      position: relative;
+      // display: none;
+      width: 100%;
+      background-color: $title_color;
+      position: fixed;
+      top: 0;
+      right: 0;
+      .modal-header {
+        width: 320px;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        .modal-logo {
+          width: 91px;
+        }
+        .modal-close-button {
+          width: 40px;
+          height: 40px;
+          border: 1px solid $accent_color;
+          border-radius: 50%;
+          background-color: transparent;
+          .modal-svg {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+      .menu-list {
+        padding-top: 116px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .menu-list-item {
+          border: 3px solid #fff;
+          border-radius: 40px;
+          padding: 10px;
+          width: 288px;
+          text-align: center;
+          font-weight: 700;
+          font-size: 20px;
+        }
+      }
+    }
+    .nav-list {
+      .nav-list-link {
+        display: none;
+      }
 
-  .nav-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @include media(desktop) {
-      gap: 62px;
-      .nav-link {
-        border: 3px solid #fff;
-        border-radius: 40px;
-        padding: 10px 0;
-        width: 104px;
-        font-weight: 700;
-        font-size: 20px;
-        text-align: center;
-        background-color: transparent;
-        color: $accent_color;
-        box-shadow: 2px 4px 4px 0 #111;
+      @include media(desktop) {
+        // .header {
+        //   padding-right: 48px;
+        // }
+        .header-box {
+          padding-right: 48px;
+        }
+        .menu-button {
+          display: none;
+        }
+        .nav-list-link {
+          display: flex;
+          gap: 62px;
+        }
+        .nav-link {
+          border: 3px solid #fff;
+          border-radius: 40px;
+          padding: 10px 0;
+          width: 104px;
+          font-weight: 700;
+          font-size: 20px;
+          text-align: center;
+          background-color: transparent;
+          color: $accent_color;
+          box-shadow: 2px 4px 4px 0 #111;
+        }
       }
     }
   }

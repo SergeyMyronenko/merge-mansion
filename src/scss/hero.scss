@@ -1,9 +1,10 @@
 .hero {
   .hero-bg {
-    position: relative;
     background-image: url('../img/hero-image.jpg');
     background-repeat: no-repeat;
     background-position: top right;
+    background-color: $main_bg_color;
+    padding-bottom: 54px;
   }
   .hero-title {
     padding-top: 110px;
@@ -20,19 +21,19 @@
     color: $accent_color;
     margin-top: 32px;
   }
-  .hero-play-button {
-    display: flex;
-    justify-content: center;
-    .play-button {
-      width: 207px;
-      height: 64px;
-      margin-top: 84px;
-      border-radius: 20px;
-      border: 1px solid #fff;
-      overflow: hidden;
-      .hero-play-image {
-        object-fit: cover;
-      }
+
+  .hero-link {
+    display: block;
+    width: 207px;
+    height: 64px;
+    margin-top: 84px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    .hero-play-image {
+      object-fit: cover;
     }
   }
 
@@ -40,6 +41,8 @@
     .hero-bg {
       background-image: url('../img/hero-image-desk.jpg');
       background-position: top right;
+      padding-bottom: 100px;
+      padding-right: 48px;
       .hero-title {
         padding-top: 183px;
         width: 726px;
@@ -47,8 +50,11 @@
       }
       .hero-paragraph {
         margin-top: 36px;
+        width: 537px;
+        font-size: 24px;
+        line-height: 133%;
       }
-      .play-button {
+      .hero-link {
         margin-top: 144px;
         width: 230px;
         height: 71px;

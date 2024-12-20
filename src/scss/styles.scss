@@ -1,5 +1,6 @@
 @import './header.scss';
-@import '../layouts/hero.scss';
+@import './hero.scss';
+@import './reviews.scss';
 
 :root {
   font-family: 'Karla', sans-serif;
@@ -13,11 +14,19 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0 auto;
+  width: 320px;
+  @include media(desktop) {
+    width: 1200px;
+  }
+}
+
 section {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: $main_bg_color;
+  background-color: $accent_color;
 }
 
 .container {

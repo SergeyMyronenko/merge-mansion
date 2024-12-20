@@ -3,7 +3,8 @@
 @import './terms-conditions.scss';
 @import './footer.scss';
 @import './faq.scss';
-@import '../layouts/hero.scss';
+@import './hero.scss';
+@import './reviews.scss';
 @import './gallery.scss';
 @import './features.scss';
 
@@ -20,11 +21,19 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0 auto;
+  width: 320px;
+  @include media(desktop) {
+    width: 1200px;
+  }
+}
+
 section {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: $main_bg_color;
+  background-color: $accent_color;
 }
 
 .container {

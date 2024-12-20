@@ -17,30 +17,60 @@
     <title>Merge Farm Life: Mansion Story</title>
     
     <script type="module" crossorigin src="/merge-mansion/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/merge-mansion/assets/styles-e11a0541.css">
+    <link rel="stylesheet" href="/merge-mansion/assets/styles-935b2b14.css">
   </head>
   <body>
-    <header class="container header">
-  <div class="header-box">
-    <a href="index"
-      ><img
-        class="logo-image"
-        src="../img/mergemansionlogo.png"
-        alt="Merge mansion logo"
-    /></a>
-    <nav class="nav-list">
-      <button class="menu-button">
-        <svg class="header-svg">
-          <use href="../img/sprite.svg#icon-table-alternative"></use>
-        </svg>
-      </button>
-      <a class="nav-link" href="">Reviews</a>
-      <a class="nav-link" href="">About Us</a>
-      <a class="nav-link" href="">Features</a>
-      <a class="nav-link" href="">Gallery</a>
-      <a class="nav-link" href="">FAQ</a>
-    </nav>
-  </div>
+    
+  <header class="container header">
+    <div class="header-box">
+      <a href="index"
+        ><img
+          class="logo-image"
+          src="../img/mergemansionlogo.png"
+          alt="Merge mansion logo"
+      /></a>
+      <nav class="nav-list">
+        <button class="menu-button">
+          <svg class="header-svg">
+            <use href="../img/sprite.svg#icon-table-alternative"></use>
+          </svg>
+        </button>
+        <ul class="nav-list-link">
+          <li class="nav-link"><a href="#reviews">Reviews</a></li>
+          <li class="nav-link"><a href="#about">About Us</a></li>
+          <li class="nav-link"><a href="#features">Features</a></li>
+          <li class="nav-link"><a href="#gallery">Gallery</a></li>
+          <li class="nav-link"><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div id="modalWindow" class="modal">
+        <div class="modal-header">
+          <img
+            class="modal-logo"
+            src="../img/mergemansionlogo.png"
+            alt="Merge mansion logo"
+          />
+          <button class="modal-close-button">
+            <svg class="modal-svg">
+              <use href="../img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="menu-list">
+          <li class="menu-list-item"><a href="">Reviews</a></li>
+          <li class="menu-list-item"><a href="">About Us</a></li>
+          <li class="menu-list-item"><a href="">Features</a></li>
+          <li class="menu-list-item"><a href="">Gallery</a></li>
+          <li class="menu-list-item"><a href="">FAQ</a></li>
+        </ul>
+        <div>
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms and Conditions</a>
+        </div>
+        <p>All rights reserved bestpathstar.com | 2024</p>
+      </div>
+    </div>
+  </header>
 </header>
 
     <main>
@@ -50,15 +80,189 @@
     <p class="hero-paragraph">
       Merge, Build, and Uncover the Secrets of a Magical Farm Mansion!
     </p>
-    <div class="hero-play-button">
-      <button class="play-button">
-        <img
-          class="hero-play-image"
-          src="../img/play-market.png"
-          alt="Button for downloading app with play-market"
-        />
-      </button>
+
+    <a
+      class="hero-link"
+      href="https://play.google.com/store/apps/details?id=com.enjoysports.merge.farm.life.merge.games"
+      target="_blank"
+    >
+      <img
+        class="hero-play-image"
+        src="../img/play-market.png"
+        alt="Button for downloading app with play-market"
+    /></a>
+  </div>
+</section>
+
+      <section class="review-section" id="reviews">
+  <div class="container block-review">
+    <h2 class="review-title">Reviews</h2>
+    <ul class="reviews-list">
+      <li class="reviews-list-item">
+        <h3 class="list-title">FarmLover</h3>
+        <p class="reviews-article">
+          A beautifully designed game that combines merging and farming
+          perfectly! The mansion upgrades are so satisfying.
+        </p>
+      </li>
+      <li class="reviews-list-item">
+        <h3 class="list-title">PazzleMaster</h3>
+        <p class="reviews-article">
+          I love how each new merge opens up more of the mansion and farm. Great
+          mix of relaxing gameplay and fun challenges!
+        </p>
+      </li>
+      <li class="reviews-list-item">
+        <h3 class="list-title">RelaxedFarmer</h3>
+        <p class="reviews-article">
+          I’m really enjoying the peaceful farm vibe while solving fun puzzles.
+          The mansion progression is exciting!
+        </p>
+      </li>
+      <li class="reviews-list-item">
+        <h3 class="list-title">DailyGamer</h3>
+        <p class="reviews-article">
+          This game is addictive. I can’t stop merging and improving my farm.
+          Perfect for casual play!
+        </p>
+      </li>
+      <li class="reviews-list-item">
+        <h3 class="list-title">StrategicGardener</h3>
+        <p class="reviews-article">
+          A relaxing but challenging game. The merging mechanics are engaging,
+          and I love the mansion storyline!
+        </p>
+      </li>
+    </ul>
+    <div class="pagination-box">
+      <span class="pagination"></span>
+      <span class="pagination"></span>
+      <span class="pagination"></span>
+      <span class="pagination"></span>
+      <span class="pagination"></span>
     </div>
+  </div>
+</section>
+
+      <section class="features-section" id="features">
+  <div class="features-container">
+    <h1 class="features-title">Features</h1>
+    <ul class="features-list">
+      <li class="features-list-item">
+        <div class="features-list-item-container">
+          <h2 class="features-list-item-title">Unique Merging Gameplay</h2>
+          <span class="features-list-item-dot"
+            ><svg class="arrow-icon" width="10" height="10">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-ellipse"></use>
+            </svg>
+          </span>
+          <p class="features-list-item-text">
+            Combine items and farm produce to create new and more powerful
+            objects, unlocking new areas and helping you progress.
+          </p>
+          <span class="features-list-item-line"
+            ><svg class="arrow-icon">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#Line"></use>
+            </svg>
+          </span>
+          <span class="features-list-item-line-dt1"
+            ><svg class="arrow-icon">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-Line-1"></use>
+            </svg>
+          </span>
+        </div>
+      </li>
+
+      <li class="features-list-item">
+        <div class="features-list-item-container">
+          <h2 class="features-list-item-title">
+            Stunning Mansion and Farm Design
+          </h2>
+          <span class="features-list-item-dot"
+            ><svg class="dot-icon" width="10" height="10">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-ellipse"></use>
+            </svg>
+          </span>
+          <p class="features-list-item-text">
+            Combine items and farm produce to create new and more powerful
+            objects, unlocking new areas and helping you progress.
+          </p>
+          <span class="features-list-item-line"
+            ><svg class="arrow-icon">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#Line"></use>
+            </svg>
+          </span>
+          <span class="features-list-item-line-dt2"
+            ><svg class="arrow-icon">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-Line-2"></use>
+            </svg>
+          </span>
+        </div>
+      </li>
+      <li class="features-list-item">
+        <div class="features-list-item-container">
+          <h2 class="features-list-item-title">Relaxing</h2>
+          <h2 class="features-list-item-subtitle">Storyline</h2>
+          <span class="features-list-item-dot"
+            ><svg class="dot-icon" width="10" height="10">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-ellipse"></use>
+            </svg>
+          </span>
+          <p class="features-list-item-text">
+            Uncover the hidden secrets of the mansion as you complete puzzles
+            and unlock new chapters in the story.
+          </p>
+          <span class="features-list-item-line"
+            ><svg class="arrow-icon">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#Line"></use>
+            </svg>
+          </span>
+          <span class="features-list-item-line-dt3"
+            ><svg class="arrow-icon">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-Line-3"></use>
+            </svg>
+          </span>
+        </div>
+      </li>
+      <li class="features-list-item">
+        <div class="features-list-item-container">
+          <h2 class="features-list-item-title">Offline Play</h2>
+          <span class="features-list-item-dot"
+            ><svg class="dot-icon" width="10" height="10">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-ellipse"></use>
+            </svg>
+          </span>
+          <p class="features-list-item-text">
+            Enjoy solving puzzles and building your farm and mansion even when
+            you don't have access to the internet.
+          </p>
+          <span class="features-list-item-line"
+            ><svg class="arrow-icon">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#Line"></use>
+            </svg>
+          </span>
+          <span class="features-list-item-line-dt4"
+            ><svg class="arrow-icon">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-Line-4"></use>
+            </svg>
+          </span>
+        </div>
+      </li>
+      <li class="features-list-item">
+        <div class="features-list-item-container">
+          <h2 class="features-list-item-title">Daily Rewards and Events</h2>
+          <span class="features-list-item-dot"
+            ><svg class="dot-icon" width="10" height="10">
+              <use href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-ellipse"></use>
+            </svg>
+          </span>
+          <p class="features-list-item-text">
+            Log in every day for exciting bonuses, participate in limited-time
+            events, and earn exclusive rewards.
+          </p>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -145,7 +349,7 @@
           How do I start the game?
           <span class="faq-toggle-symbol">
             <svg class="faq-icon" width="50" height="50">
-              <use xlink:href="/merge-mansion/assets/sprite-11b62d17.svg#icon-down"></use>
+              <use xlink:href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-down"></use>
             </svg>
           </span>
         </p>
@@ -160,7 +364,7 @@
           Is the game free?
           <span class="faq-toggle-symbol">
             <svg class="faq-icon" width="50" height="50">
-              <use xlink:href="/merge-mansion/assets/sprite-11b62d17.svg#icon-down"></use>
+              <use xlink:href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-down"></use>
             </svg>
           </span>
         </p>
@@ -175,7 +379,7 @@
           Can I play without an internet connection?
           <span class="faq-toggle-symbol">
             <svg class="faq-icon" width="50" height="50">
-              <use xlink:href="/merge-mansion/assets/sprite-11b62d17.svg#icon-down"></use>
+              <use xlink:href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-down"></use>
             </svg>
           </span>
         </p>
@@ -190,7 +394,7 @@
           What are the boosters?
           <span class="faq-toggle-symbol">
             <svg class="faq-icon" width="50" height="50">
-              <use xlink:href="/merge-mansion/assets/sprite-11b62d17.svg#icon-down"></use>
+              <use xlink:href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-down"></use>
             </svg>
           </span>
         </p>
@@ -206,7 +410,7 @@
           How do I unlock new levels and areas?
           <span class="faq-toggle-symbol">
             <svg class="faq-icon" width="50" height="50">
-              <use xlink:href="/merge-mansion/assets/sprite-11b62d17.svg#icon-down"></use>
+              <use xlink:href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-down"></use>
             </svg>
           </span>
         </p>
@@ -221,7 +425,7 @@
           Can I play with friends?
           <span class="faq-toggle-symbol">
             <svg class="faq-icon" width="50" height="50">
-              <use xlink:href="/merge-mansion/assets/sprite-11b62d17.svg#icon-down"></use>
+              <use xlink:href="/merge-mansion/assets/sprite-2073e6e0.svg#icon-down"></use>
             </svg>
           </span>
         </p>

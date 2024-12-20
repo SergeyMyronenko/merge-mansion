@@ -1,0 +1,195 @@
+.features-section {
+  padding: 36px 16px 51px 16px;
+  background-color: #fff;
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+
+  @include media(desktop) {
+    width: 1200px;
+    padding: 29px 92px 46px 92px;
+    position: relative;
+    background: url('./../img/icon-rake.png') no-repeat,
+      url('./../img/icon-flowers.png') no-repeat,
+      url('./../img/icon-tree.png') no-repeat,
+      url('./../img/icon-watering-can.png') no-repeat;
+    background-position: -45px 55px, 980px 760px, -45px 1080px, 1000px 1470px;
+  }
+}
+
+.features-list {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 97px;
+  }
+}
+
+.features-title {
+  font-family: 'Pacifico', sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 140%;
+  color: #71412b;
+
+  @include media(desktop) {
+    padding: 29px 92px 46px 92px;
+    text-align: center;
+  }
+}
+
+.features-list-item {
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    width: 1200px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+  }
+}
+
+.features-list-item:nth-child(2) {
+  @include media(desktop) {
+    margin-top: -100px;
+  }
+}
+
+.features-list-item:nth-child(3) {
+  @include media(desktop) {
+    margin-top: -70px;
+  }
+}
+
+.features-list-item-container {
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.features-list-item:nth-child(even) {
+  @include media(desktop) {
+    padding-left: 527px;
+  }
+}
+
+.features-list-item-title {
+  font-family: 'Karla', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 111%;
+  color: #d59800;
+
+  @include media(desktop) {
+    font-size: 56px;
+    line-height: 114%;
+    text-align: left;
+  }
+}
+
+.features-list-item-subtitle {
+  text-align: end;
+  font-family: 'Karla', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 111%;
+  color: #d59800;
+  @include media(desktop) {
+    font-size: 56px;
+    line-height: 114%;
+    text-align: end;
+  }
+}
+
+.features-list-item-text {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #000;
+}
+
+.features-list-item-dot {
+  text-align: center;
+  padding-top: 24px;
+}
+
+.dot-icon {
+  @include media(desktop) {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.features-list-item-text {
+  margin-top: 24px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #000;
+
+  @include media(desktop) {
+    font-size: 24px;
+    line-height: 133%;
+    text-align: left;
+  }
+}
+
+.features-list-item-line {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.features-list-item-line-dt1 {
+  display: none;
+  @include media(desktop) {
+    position: absolute;
+    top: 80px;
+    left: 347px;
+    display: block;
+  }
+}
+
+.features-list-item-line-dt2 {
+  display: none;
+  @include media(desktop) {
+    position: absolute;
+    top: 158px;
+    left: 240px;
+    display: block;
+  }
+}
+
+.features-list-item-line-dt3 {
+  display: none;
+  @include media(desktop) {
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    display: block;
+  }
+}
+
+.features-list-item-line-dt4 {
+  display: none;
+  @include media(desktop) {
+    position: absolute;
+    top: 78px;
+    left: 240px;
+    display: block;
+  }
+}

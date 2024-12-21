@@ -1,5 +1,6 @@
-const faqBtns = document.querySelectorAll('.faq-list-item');
+import sprite from '../img/sprite.svg';
 
+const faqBtns = document.querySelectorAll('.faq-list-item');
 faqBtns.forEach(btn => btn.addEventListener('click', onBtnClick));
 
 function onBtnClick(e) {
@@ -13,19 +14,17 @@ function onBtnClick(e) {
     if (item !== faqContainer) {
       item.classList.remove('faq-open');
       item.querySelector('.faq-bottom-text').classList.remove('is-visible');
-      item
-        .querySelector('use')
-        .setAttribute('href', './img/sprite.svg#icon-down');
+      item.querySelector('use').setAttribute('href', `${sprite}#icon-down`);
     }
   });
 
   if (isVisible) {
     faqContainer.classList.remove('faq-open');
     faqBottomText.classList.remove('is-visible');
-    faqIcon.setAttribute('href', './img/sprite.svg#icon-down');
+    faqIcon.setAttribute('href', `${sprite}#icon-down`);
   } else {
     faqContainer.classList.add('faq-open');
     faqBottomText.classList.add('is-visible');
-    faqIcon.setAttribute('href', './img/sprite.svg#icon-up');
+    faqIcon.setAttribute('href', `${sprite}#icon-up`);
   }
 }

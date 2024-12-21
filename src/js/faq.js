@@ -15,17 +15,17 @@ function onBtnClick(e) {
       item.querySelector('.faq-bottom-text').classList.remove('is-visible');
       item
         .querySelector('use')
-        .setAttribute('xlink:href', './img/sprite.svg#icon-down');
+        .setAttribute('href', './img/sprite.svg#icon-down');
     }
   });
 
   if (isVisible) {
     faqContainer.classList.remove('faq-open');
     faqBottomText.classList.remove('is-visible');
-    faqIcon.setAttribute('xlink:href', './img/sprite.svg#icon-down');
+    faqIcon.setAttribute('href', './img/sprite.svg#icon-down');
   } else {
     faqContainer.classList.add('faq-open');
     faqBottomText.classList.add('is-visible');
-    faqIcon.setAttribute('xlink:href', './img/sprite.svg#icon-up');
+    faqIcon.setAttribute('href', './img/sprite.svg#icon-up');
   }
 }

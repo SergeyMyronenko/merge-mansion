@@ -23,6 +23,14 @@
   }
 }
 
+.terms-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.terms-icon:hover {
+  transform: scale(1.1);
+}
+
 .terms-link svg {
   @include media(desktop) {
     width: 100px;

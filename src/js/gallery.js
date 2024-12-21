@@ -1,59 +1,53 @@
-// import Swiper from 'swiper';
-// import 'swiper/css/bundle';
+import Swiper from 'swiper';
+import 'swiper/css/bundle';
 
-// const dots = document.querySelectorAll('.dot');
-// const leftArrow = document.getElementById('leftArrow');
-// const rightArrow = document.getElementById('rightArrow');
+document.addEventListener('DOMContentLoaded', () => {
+  const leftArrow = document.getElementById('leftArrow');
+  const rightArrow = document.getElementById('rightArrow');
 
-// const gallerySwiper = new Swiper('.gallery-swiper-container', {
-//   direction: 'horizontal',
-//   loop: false,
-//   grabCursor: true,
-//   slidesPerView: 1,
-//   initialSlide: 0,
-//   spaceBetween: 12,
-//   grabCursor: true,
-//   allowTouchMove: true,
-//   speed: 500,
-//   breakpoints: {
-//     1440: {
-//       spaceBetween: 24,
-//     },
-//   },
-//   on: {
-//     init: () => {
-//       document.querySelector('.gallery-swiper-container').classList.add('show');
-//     },
-//     slideChange: () => {
-//       updateDots(gallerySwiper.realIndex);
-//       updateArrows();
-//     },
-//   },
-// });
+  const gallerySwiper = new Swiper('.gallery-swiper-container', {
+    direction: 'horizontal',
+    loop: false,
+    grabCursor: true,
+    slidesPerView: 1,
+    initialSlide: 1,
+    spaceBetween: 0,
+    allowTouchMove: true,
+    speed: 800,
+    breakpoints: {
+      1200: {
+        spaceBetween: 20,
+        slidesPerView: 3,
+        centeredSlides: true,
+      },
+    },
+    on: {
+      init: function () {
+        document
+          .querySelector('.gallery-swiper-container')
+          .classList.add('show');
+        updateArrows(this);
+      },
 
-// function updateDots(index) {
-//   dots.forEach((dot, i) => {
-//     dot.classList.toggle('active', i === index);
-//   });
-// }
+      slideChange: function () {
+        updateArrows(this);
+      },
+    },
+    observer: true,
+    observeParents: true,
+    watchOverflow: true,
+  });
 
-// function updateArrows() {
-//   leftArrow.disabled = gallerySwiper.isBeginning;
-//   rightArrow.disabled = gallerySwiper.isEnd;
-// }
+  function updateArrows(swiperInstance) {
+    leftArrow.disabled = swiperInstance.isBeginning;
+    rightArrow.disabled = swiperInstance.isEnd;
+  }
 
-// updateArrows();
+  leftArrow.addEventListener('click', () => {
+    gallerySwiper.slidePrev();
+  });
 
-// dots.forEach((dot, index) => {
-//   dot.addEventListener('click', () => {
-//     gallerySwiper.slideTo(index);
-//   });
-// });
-
-// leftArrow.addEventListener('click', () => {
-//   gallerySwiper.slidePrev();
-// });
-
-// rightArrow.addEventListener('click', () => {
-//   gallerySwiper.slideNext();
-// });
+  rightArrow.addEventListener('click', () => {
+    gallerySwiper.slideNext();
+  });
+});

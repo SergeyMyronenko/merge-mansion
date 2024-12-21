@@ -2,6 +2,7 @@
   position: fixed;
   z-index: 10;
   background-color: transparent;
+  backdrop-filter: blur(0px);
 
   .header-box {
     margin: 0 auto;
@@ -29,17 +30,29 @@
       height: 25px;
       fill: #fff;
     }
+
+    @include media(desktop) {
+      padding-right: 32px;
+      height: 104px;
+      .logo-image {
+        width: 160px;
+      }
+      .menu-button {
+        display: none;
+      }
+    }
+
     .modal {
-      position: relative;
       display: none;
-      width: 100%;
+      max-width: 320px;
       background-color: $title_color;
       position: fixed;
       top: 0;
       right: 0;
+      padding: 16px;
+
       .modal-header {
-        width: 320px;
-        position: absolute;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         .modal-logo {
@@ -58,7 +71,7 @@
         }
       }
       .menu-list {
-        padding-top: 116px;
+        margin-top: 52px;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -73,21 +86,31 @@
         }
       }
     }
+    .block-info {
+      margin-top: 30px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 141%;
+      text-align: end;
+      padding-right: 46px;
+    }
+    .modal-rights {
+      margin-top: 43px;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 150%;
+      text-align: center;
+    }
     .nav-list {
+      height: 100%;
+      display: flex;
+      align-items: center;
+
       .nav-list-link {
         display: none;
       }
 
       @include media(desktop) {
-        // .header {
-        //   padding-right: 48px;
-        // }
-        .header-box {
-          padding-right: 48px;
-        }
-        .menu-button {
-          display: none;
-        }
         .nav-list-link {
           display: flex;
           gap: 62px;
@@ -102,6 +125,18 @@
           text-align: center;
           background-color: transparent;
           color: $accent_color;
+          box-shadow: 2px 4px 4px 0 #111;
+        }
+        .nav-link-scroll {
+          border: 3px solid $title_color;
+          border-radius: 40px;
+          padding: 10px 0;
+          width: 104px;
+          font-weight: 700;
+          font-size: 20px;
+          text-align: center;
+          background-color: transparent;
+          color: $title_color;
           box-shadow: 2px 4px 4px 0 #111;
         }
       }

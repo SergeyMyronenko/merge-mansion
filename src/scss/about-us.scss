@@ -1,0 +1,47 @@
+.about-block {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  background-color: $main_bg_color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .about-title {
+    font-family: 'Pacifico', sans-serif;
+    font-weight: 400;
+    font-size: 69px;
+    line-height: 140%;
+    color: $title_color;
+  }
+  .about-image {
+    margin-top: 32px;
+    width: 288px;
+    height: 288px;
+    border-radius: 20px;
+    background-image: url('../img/merge_mansion-800x533.png');
+    .about-blur {
+    }
+  }
+  .about-article {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: $text_color;
+    .main-text {
+    }
+    .more-text {
+      display: none;
+    }
+    .more-button {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 120%;
+      padding-left: 4px;
+      background-color: transparent;
+      text-decoration: underline;
+      border: none;
+      color: $accent_color;
+    }
+  }
+}

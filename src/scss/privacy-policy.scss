@@ -23,6 +23,14 @@
   }
 }
 
+.privacy-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.privacy-icon:hover {
+  transform: scale(1.1);
+}
+
 .privacy-link svg {
   @include media(desktop) {
     width: 100px;

@@ -5,6 +5,7 @@
   @include media(desktop) {
     padding-top: 45px;
     position: relative;
+    height: 641px;
   }
 }
 
@@ -27,6 +28,7 @@
 
   @include media(desktop) {
     margin-top: 75px;
+    height: 423px;
   }
 }
 

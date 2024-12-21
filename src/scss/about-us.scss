@@ -1,6 +1,13 @@
-.about-block {
+#about {
   padding-top: 40px;
   padding-bottom: 70px;
+  background-color: $main_bg_color;
+  @include media(desktop) {
+    padding-top: 26px;
+    padding-bottom: 72px;
+  }
+}
+.about-block {
   background-color: $main_bg_color;
   display: flex;
   flex-direction: column;
@@ -13,23 +20,54 @@
     line-height: 140%;
     color: $title_color;
   }
-  .about-image {
+  .about-blok-image {
     margin-top: 32px;
-    width: 288px;
-    height: 288px;
-    border-radius: 20px;
-    background-image: url('../img/merge_mansion-800x533.png');
-    .about-blur {
+    .about-image {
+      width: 288px;
+      height: 288px;
+      border-radius: 20px;
+      background-image: url('../img/merge_mansion-800x533.png');
+      background-repeat: no-repeat;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      .about-blur {
+        width: 96px;
+        height: 96px;
+        backdrop-filter: blur(5px);
+        z-index: 5;
+      }
+      .not-visible {
+        display: none;
+      }
+
+      @include media(desktop) {
+        margin-top: 0;
+        width: 566px;
+        height: 566px;
+        background-image: url('../img/merge_mansion-desktop.jpg.png');
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        .about-blur {
+          width: 142px;
+          height: 142px;
+        }
+      }
+    }
+    @include media(desktop) {
+      margin-top: 78px;
+      display: flex;
+      flex-direction: row-reverse;
     }
   }
+
   .about-article {
     margin-top: 24px;
     font-weight: 400;
     font-size: 14px;
     line-height: 143%;
     color: $text_color;
-    .main-text {
-    }
     .more-text {
       display: none;
     }
@@ -42,6 +80,22 @@
       text-decoration: underline;
       border: none;
       color: $accent_color;
+    }
+    @include media(desktop) {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 133%;
+      width: 566px;
+      .more-text {
+        display: block;
+        margin-top: 76px;
+      }
+      .text-dot {
+        display: none;
+      }
+      .more-button {
+        display: none;
+      }
     }
   }
 }

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     grabCursor: true,
     slidesPerView: 1,
     initialSlide: 1,
-    spaceBetween: 0,
+    spaceBetween: 10,
     allowTouchMove: true,
     speed: 800,
     breakpoints: {

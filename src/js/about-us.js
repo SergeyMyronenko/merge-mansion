@@ -1,11 +1,13 @@
 const moreBtn = document.querySelector('.more-button');
 const blurImages = document.querySelectorAll('.about-blur');
+const plusIcon = document.querySelectorAll('.about-blur-image');
 
 moreBtn.addEventListener('click', readMore);
 blurImages.forEach(image => image.addEventListener('touchstart', onblurImage));
-blurImages.forEach(image =>
-  image.addEventListener('mouseover/mouseout', onblurImage)
-);
+blurImages.forEach(image => {
+  const plusIcon = image.querySelector('.about-blur-image');
+  image.addEventListener('mousemove', () => onblurImage(image, plusIcon));
+});
 
 function readMore() {
   const moreText = document.querySelector('.more-text');
@@ -19,9 +21,16 @@ function readMore() {
   }
 }
 
-function onblurImage(e) {
-  e.target.style.backdropFilter = 'none';
+function onblurImage(image, plusIcon) {
+  image.classList.remove('about-blur');
+  image.classList.add('about-blur-touch');
+  plusIcon.classList.remove('about-blur-image');
+  plusIcon.classList.add('about-blur-image-touch');
+
   setTimeout(() => {
-    e.target.style.backdropFilter = '5px';
-  }, 2000);
+    image.classList.add('about-blur');
+    image.classList.remove('about-blur-touch');
+    plusIcon.classList.add('about-blur-image');
+    plusIcon.classList.remove('about-blur-image-touch');
+  }, 5000);
 }

@@ -20,23 +20,56 @@
     line-height: 140%;
     color: $title_color;
   }
+  .about-tap-me {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    height: 32px;
+    .tap-me-icon {
+      position: absolute;
+      right: 63px;
+    }
+    .tap-me-text {
+      transform: rotate(12deg);
+    }
+    @include media(desktop) {
+      display: none;
+    }
+  }
   .about-blok-image {
-    margin-top: 32px;
     .about-image {
       width: 288px;
       height: 288px;
       border-radius: 20px;
       background-image: url('../img/merge_mansion-800x533.png');
+      background-size: 100%;
       background-repeat: no-repeat;
       overflow: hidden;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
+      @media (min-resolution: 192dpi) {
+        background-image: url('../img/merge_mansion-800x533-2x.png');
+      }
       .about-blur {
         width: 96px;
         height: 96px;
         backdrop-filter: blur(5px);
         z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .about-blur-image {
+          width: 22px;
+          height: 22px;
+        }
+      }
+      .about-blur-touch {
+        backdrop-filter: none;
+        .about-blur-image-touch {
+          display: none;
+        }
       }
       .not-visible {
         display: none;
@@ -46,12 +79,21 @@
         margin-top: 0;
         width: 566px;
         height: 566px;
-        background-image: url('../img/merge_mansion-desktop.jpg.png');
+        background-image: url('../img/merge_mansion-desktop.png');
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 1fr);
+
+        @media (min-resolution: 192dpi) {
+          background-image: url('../img/merge_mansion-desktop-2x.png');
+        }
+
         .about-blur {
           width: 142px;
           height: 142px;
+          .about-blur-image {
+            width: 32px;
+            height: 32px;
+          }
         }
       }
     }

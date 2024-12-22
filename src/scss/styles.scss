@@ -21,6 +21,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0 auto;
@@ -35,12 +38,17 @@ section {
   padding: 0;
   margin: 0;
   background-color: $accent_color;
+  scroll-margin-top: 60px;
+  @include media(desktop) {
+    scroll-margin-top: 100px;
+  }
 }
 
 .container {
   padding: 0 16px;
   margin: 0 auto;
   width: 320px;
+  margin: 0 auto;
 
   @include media(desktop) {
     width: 1200px;

@@ -20,12 +20,10 @@ function closeModal(e) {
 
 function blurHeader() {
   if (window.scrollY > 60) {
-    header.style.backdropFilter = 'blur(10px)';
-    headerItem.forEach(item => item.classList.remove('nav-link'));
-    headerItem.forEach(item => item.classList.add('nav-link-scroll'));
+    header.classList.add('header-scroll');
+    header.classList.add('header');
   } else {
-    header.style.backdropFilter = 'blur(0px)';
-    headerItem.forEach(item => item.classList.add('nav-link'));
-    headerItem.forEach(item => item.classList.remove('nav-link-scroll'));
+    header.classList.remove('header-scroll');
+    header.classList.add('header');
   }
 }

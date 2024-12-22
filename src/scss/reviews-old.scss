@@ -1,17 +1,67 @@
 .review-section {
-  position: relative;
-  padding-top: 29px;
-  padding-bottom: 75px;
-  background: url('../img/frame-for-modile.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  .block-review {
+    position: relative;
+    background-image: url('../img/mobile-bg.png');
+    background-position: bottom;
+    // background-size: 100%;
+    background-repeat: repeat-y;
+    padding-top: 9px;
+    padding-bottom: 66px;
+    @media (min-resolution: 192dpi) {
+      background-image: url('../img/mobile-bg-2x.png');
+    }
+    .color-gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 49px;
+      background: linear-gradient(
+        to bottom,
+        rgb(235, 217, 182, 1),
+        rgb(235, 217, 182, 0.1)
+      );
+    }
 
-  @include media(desktop) {
-    background: url('../img/frame.png');
-    padding-top: 19px;
-  }
-}
+    .review-title {
+      font-family: 'Pacifico', sans-serif;
+      font-weight: 400;
+      font-size: 70px;
+      line-height: 140%;
+      color: $title_color;
+      text-align: center;
+    }
+    .reviews-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 34px;
+      margin-left: auto;
+      margin-right: auto;
+      .reviews-list-item {
+        border: 2px solid #000;
+        border-radius: 12px;
+        padding: 6px 14px;
+        width: 288px;
+        height: 149px;
+        background-color: $main_bg_color;
+        box-shadow: 6px 4px 3px 0 #000;
+        .list-title {
+          text-align: center;
+          color: $title_color;
+          font-style: italic;
+          font-weight: 800;
+          font-size: 19px;
+          line-height: 125%;
+        }
+        .reviews-article {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 143%;
+          color: $text_color;
+          margin-top: 12px;
+        }
+      }
+    }
 
 @media (min-resolution: 192dpi) {
   .review-section {
@@ -19,6 +69,39 @@
     background-size: 100%;
 
     @include media(desktop) {
+      padding-bottom: 78px;
+      background-image: url('../img/desktop-bg.png');
+      @media (min-resolution: 192dpi) {
+        background-image: url('../img/desktop-bg-2x.png');
+      }
+
+      .reviews-list {
+        margin-top: 78px;
+        width: 1008px;
+        gap: 30px 80px;
+
+        justify-content: center;
+        .reviews-list-item {
+          border: 3px solid #000;
+          border-radius: 20px;
+          padding: 10px 24px;
+          width: 464px;
+          height: 237px;
+          .list-title {
+            font-size: 32px;
+          }
+          .reviews-article {
+            margin-top: 9px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 133%;
+            margin-top: 19px;
+          }
+        }
+      }
+      .pagination-box {
+        display: none;
+      }
       background: url('../img/frame-2x.png');
       padding-top: 19px;
     }

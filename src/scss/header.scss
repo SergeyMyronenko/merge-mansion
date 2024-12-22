@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 10;
   background-color: transparent;
-  backdrop-filter: blur(0px);
+  // backdrop-filter: blur(0px);
 
   .header-box {
     margin: 0 auto;
@@ -48,7 +48,8 @@
       background-color: $title_color;
       position: fixed;
       top: 0;
-      right: 0;
+      left: 50%;
+      transform: translateX(-50%);
       padding: 16px;
 
       .modal-header {
@@ -127,19 +128,23 @@
           color: $accent_color;
           box-shadow: 2px 4px 4px 0 #111;
         }
-        .nav-link-scroll {
-          border: 3px solid $title_color;
-          border-radius: 40px;
-          padding: 10px 0;
-          width: 104px;
-          font-weight: 700;
-          font-size: 20px;
-          text-align: center;
-          background-color: transparent;
-          color: $title_color;
-          box-shadow: 2px 4px 4px 0 #111;
-        }
+        // .nav-link-scroll {
+        //   border: 3px solid $title_color;
+        //   border-radius: 40px;
+        //   padding: 10px 0;
+        //   width: 104px;
+        //   font-weight: 700;
+        //   font-size: 20px;
+        //   text-align: center;
+        //   background-color: transparent;
+        //   color: $title_color;
+        //   box-shadow: 2px 4px 4px 0 #111;
+        // }
       }
     }
   }
+}
+.header-scroll {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.7);
 }

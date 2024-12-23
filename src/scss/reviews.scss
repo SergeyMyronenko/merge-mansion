@@ -137,10 +137,6 @@
   border: 1px solid $second_color;
 }
 
-.reviews-dot.active {
-  background-color: #ebd9b6;
-}
-
 .reviews-container {
   display: none;
 
@@ -150,4 +146,8 @@
     padding-left: 98px;
     padding-right: 98px;
   }
+}
+
+.reviews-dot.active {
+  background-color: #ebd9b6;
 }

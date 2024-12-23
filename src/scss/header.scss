@@ -78,8 +78,10 @@
         margin-top: 52px;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 24px;
         .menu-list-item {
+          display: block;
           border: 3px solid #fff;
           border-radius: 40px;
           padding: 10px;
@@ -145,18 +147,6 @@
         .nav-link:active {
           background-color: #71412b;
         }
-        // .nav-link-scroll {
-        //   border: 3px solid $title_color;
-        //   border-radius: 40px;
-        //   padding: 10px 0;
-        //   width: 104px;
-        //   font-weight: 700;
-        //   font-size: 20px;
-        //   text-align: center;
-        //   background-color: transparent;
-        //   color: $title_color;
-        //   box-shadow: 2px 4px 4px 0 #111;
-        // }
       }
     }
   }

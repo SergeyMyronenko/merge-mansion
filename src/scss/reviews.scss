@@ -1,6 +1,6 @@
 .review-section {
   position: relative;
-  padding-top: 29px;
+  padding-top: 50px;
   padding-bottom: 75px;
   background: url('../img/frame-for-modile.png');
   background-size: cover;
@@ -8,8 +8,8 @@
   overflow: hidden;
 
   @include media(desktop) {
-    background: url('../img/frame.png');
-    padding-top: 19px;
+    background: url('../img/desktop-bg.png');
+    padding-top: 85px;
   }
 }
 
@@ -19,7 +19,7 @@
     background-size: 100%;
 
     @include media(desktop) {
-      background: url('../img/frame-2x.png');
+      background: url('../img/desktop-bg-2x.png');
       padding-top: 19px;
     }
   }
@@ -31,7 +31,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 35px;
+  height: 105px;
   background: linear-gradient(to bottom, #ebd9b6, rgba(235, 217, 182, 0));
 }
 
@@ -143,8 +143,8 @@
   @include media(desktop) {
     display: block;
     padding-top: 78px;
-    padding-left: 98px;
-    padding-right: 98px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 

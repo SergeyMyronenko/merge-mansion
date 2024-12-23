@@ -8,7 +8,7 @@
   overflow: hidden;
 
   @include media(desktop) {
-    background: url('../img/frame.png');
+    background: url('../img/desktop-bg.png');
     padding-top: 19px;
   }
 }
@@ -19,7 +19,7 @@
     background-size: 100%;
 
     @include media(desktop) {
-      background: url('../img/frame-2x.png');
+      background: url('../img/desktop-bg-2x.png');
       padding-top: 19px;
     }
   }

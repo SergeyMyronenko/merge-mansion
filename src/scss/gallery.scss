@@ -126,6 +126,10 @@
 
   &:hover {
     transform: scale(1.2);
+    background-color: #71412b80;
+  }
+  &active {
+    background-color: #71412b;
   }
 
   &[disabled] {

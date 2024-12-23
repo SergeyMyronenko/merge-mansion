@@ -32,9 +32,13 @@
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    transition: transform 0.3s ease-in-out;
     .hero-play-image {
       object-fit: cover;
     }
+  }
+  .hero-link:hover {
+    transform: scale(1.1);
   }
 
   @include media(desktop) {
